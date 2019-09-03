@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+}
+.content{
+    width:100%;
+}
+.header {
+    display: flex;
+    background-color:gray;
+    justify-content: space-between;
+    align-items:center;
+}
+.headerLogo{
+    width:18%;
+}
+.headerLinks{
+    display: flex;
+    padding: 0 20px 0 0;
+}
+.headerLinks a{
+    text-decoration: none;
+    color:black;
+    margin: 0 15px;
+    padding: 10px 0;
+    font-weight: bold;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+    font-size: 3vw;
+    text-align: center;
+}
+.headerLinks a:hover{
+    opacity: 0.4;
+}
+.mainContent{
+    display:flex;
+    background-color:#F1A536;
+    padding: 15px 0;
+}
+.mainImageContainer{
+    width:50%;
+    align-self:center;
+}
+.mainImage{
+    width:100%;
+    margin:10px;
+    box-shadow: 15px 15px 15px #bf780d;
+}
+.mainBlurb{
+    text-align: center;
+    font-size: 1em;
+    width: 50%;
+    padding: 0 30px;
+    overflow:auto;
+}
+@media (max-width: 925px) {
+    .mainContent {
+        flex-direction: column;
+    }
+    .mainImageContainer, .mainBlurb{
+        width:90%;
+        align-items:center;
+    }
+}
+.redlarge{
+    color:red;
+}
+.bold{
+    font-weight:bold;
+}
+.footer{
+    background-color: black;
+    color:white;    
+}
+/* *{
+    border: 1px red dotted;
+} */
